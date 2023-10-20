@@ -3,3 +3,16 @@
 // Examples
 // ["codewars", "flick", "code", "wars"] ➞ [true, false, false, false
 
+List<bool> flickSwitch(List<String> lst) {
+  bool a = true;
+  List<bool> result = [];
+
+  for (String x in lst) {
+    if (x == "flick") {
+      a = !a;
+    }
+    result.add(a);
+  }
+
+  return result;
+}
